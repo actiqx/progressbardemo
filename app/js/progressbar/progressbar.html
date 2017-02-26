@@ -1,0 +1,18 @@
+
+<div class="progressBarContainer">
+    <div class="progressBar" ng-repeat="item in vm.DataObject.bars track by $index" >
+        <div class="bar" ng-style="vm.SetBarPercentage(item)" aria-valuemax="100">
+          <div class="innertext">
+              {{item}}%
+          </div>  
+        </div>
+    </div>
+    <div class="control_container">
+        <label id="progressBarlbl" class="progressBarlbl"> Progress Bar: </label>
+        <select name="progressBarSelect" id="progressBarSelect" ng-model="vm.SelectedProgressBar">
+            <option ng-repeat="option in vm.ProgressBarList" value="{{option.Id}}">{{option.Name}}</option>
+        </select>
+        <button class="btnStyle" ng-repeat="item in vm.DataObject.buttons track by $index" id="btn_{{$index}}" ng-click="vm.SetValOnBtnClick(item)">{{item}}</button>
+    </div>
+</div> 
+

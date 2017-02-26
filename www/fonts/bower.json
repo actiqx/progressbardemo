@@ -1,0 +1,27 @@
+{
+  "name": "progressbardemo",
+  "description": "Progressbar demo",
+  "main": "index.html",
+  "authors": [
+    "priyatosh"
+  ],
+  "license": "y",
+  "homepage": "index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.2",
+    "ngCordova": "0.1.26-alpha",
+    "angular-ui-router": "0.3.2",
+    "angular-aria": "^1.6.2",
+    "bootstrap": "^3.3.7", 
+    "toastr": "^2.1.1",
+        "angular-animate": "^1.4.5"
+  }
+}
